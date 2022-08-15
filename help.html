@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="assets/img/logo.png" rel="icon">
+        <link rel="stylesheet" href="assets/librerias/bootstrap.min.css"> <!--* Libraries Bootstrap -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title> Speech And Animation Web API | Help </title>
+	</head>
+	<body>
+
+		<header>
+			<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color" style="background-color: #212121;">
+				<a class="navbar-brand" href="help.html" style="color: #4dd0e1; font-weight: 800;"> Speech And Animation Web API | Ayuda </a>
+				<img src="assets/img/img-nav.gif" height="50" class="d-inline-block align-top" alt="mdb logo">  
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	
+				<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+					<ul class="navbar-nav ml-auto nav-flex-icons">
+						<li class="nav-item"> <a class="nav-link waves-effect waves-light" target="_blank" href="https://github.com/Alejandro-190107" style="color: #4dd0e1;"> <i class="fab fa-github-square"></i> </a> </li>
+						<li class="nav-item"> <a class="nav-link waves-effect waves-light" href="#" style="color: #4dd0e1;"> <i class="fab fa-linkedin"></i></a> </li>
+						<li class="nav-item"> <a class="nav-link waves-effect waves-light" target="_blank" href="#" style="color: #4dd0e1;"> <i class="fas fa-globe"></i></a> </li>
+	  				</ul>
+				</div>
+  			</nav>
+		</header>
+
+		<!-- container -->
+        <div class="container">
+			<!-- card-deck -->
+			<div class="card-deck">
+				<!-- card -->
+				<div class="card">
+						<p class="card-header"> <i class="fas fa-upload"></i> Carga De Imagenes. </p>
+					<!-- card-body -->
+  					<div class="card-body">
+
+							<!-- card-body-buttons -->
+							<div class="card-body">
+								<button type="button" class="btn btn-dark" title="Ayuda Del Funcionamiento" data-toggle="modal" data-target="#modalCart" disabled> <i class="fas fa-info-circle"></i> </button>
+								<button href="index.html" class="btn btn-dark" title="Cargar Otra Imagen" disabled> <i class="fas fa-redo"></i>  </button>
+							</div>
+							<!-- card-body-buttons -->
+
+						<!--Card content-->
+						<div class="card-body">
+							<!-- Container -->
+							<div class="d-block d-md-flex">
+
+								<!-- Column -->
+								<div class="p-3 flex-1">
+										<h5 class="pb-3 font-weight-bold"> <i class="fas fa-image"></i> Selecciona Imagen Local. </h5>
+					  				<!-- custom-file -->
+									<div class="custom-file">
+										<input type="file" class="custom-file-input" disabled>
+										<label class="custom-file-label" for="inputGroupFile01">  </label>
+					  				</div>
+                                        <p class="indications"> Aquí sube imágenes desde tu dispositivo, dando clic en “Browse”, y seleciona alguna imagen de tus archivos.  </p>
+					  				<!-- custom-file -->
+								</div>
+								<!-- Column -->
+
+								<!-- Column -->
+								<div class="p-3 flex-1">
+										<h5 class="pb-3 font-weight-bold"> <i class="fas fa-link"></i> Inserta URL De  Imagen. </h5>
+									<!-- custom-file -->
+						  			<div class="custom-file">
+										<!-- button-input -->
+										<div class="button-input">
+											<input type="url" class="form-control mr-2" disabled> <button type="button" title="Enviar Imagen" class="btn btn-dark" disabled> <i class="fas fa-paper-plane"></i> </button> 
+										</div>
+										<!-- button-input -->
+									</div>
+									<!-- custom-file -->
+                                        <p class="indications"> Aquí sube imágenes por medio de una "URL" pegandola y posteriormente dando un clic en el icono <i class="fas fa-paper-plane"></i>. </p>
+					  			</div>
+					  			<!-- Column -->
+								
+							</div>
+							<!-- Container -->
+						</div>
+						<!--Card content-->
+
+  					</div>
+					<!-- card-body-->
+					
+				</div>
+				<!-- card -->
+
+				<!-- card -->
+				<div class="card">
+						<p class="card-header"> <i class="fas fa-images"></i> Zona De Animación. </p>
+					<!-- card-body -->
+				  	<div class="card-body">
+						<div id="icon-Micro"> <button type="button" title="Activa El Microfono" class="btn btn-dark" disabled> <i class="fas fa-microphone"></i> </button> </div>
+                        <p class="indications"> En este apartado posteriormente  de haber seleccionado tu imagen podrás visualizar los efectos que apliques a la imagen,
+                           mediante los comandos de voz. Solo dando clic en el icono del micrófono <i class="fas fa-microphone"></i> que aparece y menciona alguno de los comandos disponibles. </p>
+						<div class="card-body">
+							<img class="rounded mx-auto d-block img-thumbnail ball" id="img-load" src="assets/img/example-img.png">
+						</div>
+				  	</div>
+					<!-- card-body-->
+				</div>
+				<!-- card -->
+
+			</div>
+			<!-- card-deck -->
+		</div>
+		<!-- container -->
+
+		<footer class="page-footer font-small blue fixed-bottom" style="background-color: #212121;">
+			<div class="footer-copyright text-center text-light py-3"> <b style="color: #4dd0e1;" ><i class="far fa-copyright"></i> 2022 Creado Por Alejandro López</b></div>
+		</footer>
+
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+		<script src="assets/librerias/jquery-3.6.0.min.js"></script> <!--! Libraries jquery -->
+        <script src="assets/librerias/popper.min.js"></script> <!--! Libraries Icons -->
+        <script src="assets/librerias/bootstrap.min.js"></script> <!--! Libraries Bootstrap -->
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script> <!--! Libraries Font Of fontawesome -->
+
+	</body>
+</html>
