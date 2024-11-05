@@ -26,6 +26,6 @@ The `Web Speech API` allows for Speech Recognition in the browser, using JavaScr
 
 ## <p align="left" style="color: #80cbc4;"> Screenshot Project 💻 </p>
 
-🔶 [Project Website](https://alejandro-lopez.futuretecware.com/Speech-And-Animation-Web-Api/index.html)
+🔶 [Project Website](https://alejandro-190107.github.io/Speech-And-Animation-Web-API/)
 
 ![Screenshot](assets/img/Screenshot.png)
